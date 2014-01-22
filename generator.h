@@ -1,11 +1,9 @@
 #include <cstdlib>
 
-int* generateRandom()
+void generuj(int tab[],int n)
 {
-  int tab[10];
-  for(int i=0; i<10; i++)
-  {
-     tab[i] =( rand() % 100 );
-  }
-  return tab;
+    for(int i=0;i<n;++i)
+    {
+        tab[i]=(rand()%100)+1; // od 1 do 100
+    }
 }
