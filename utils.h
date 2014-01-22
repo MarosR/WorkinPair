@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 
 void showArrayValues(int *tab, int size)
 {
@@ -6,4 +7,9 @@ void showArrayValues(int *tab, int size)
   {
     std::cout << "Tab[" << i << "] = "<<tab[i];
   }
+}
+
+int sum(int* tab, int size)
+{
+   return std::accumulate(tab, tab + size, 0);
 }
