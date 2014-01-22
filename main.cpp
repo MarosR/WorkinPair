@@ -1,7 +1,4 @@
 #include "utils.h"
-#include "generator.h"
-#include "min.h"
-#include "max.h"
 
 #include <iostream>
 int main()
