@@ -12,7 +12,12 @@ void showArrayValues(int *tab, int size)
 
 int sum(int* tab, int size)
 {
-   return std::accumulate(tab, tab + size, 0);
+    int suma;
+	for (int i=0; i<size; i++)
+	{
+	  suma += tab[i];
+	}
+   return suma;
 }
 
 int min(int* tab, int size)
